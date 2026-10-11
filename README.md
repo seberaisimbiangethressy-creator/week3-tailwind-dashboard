@@ -20,7 +20,7 @@ npm run build    # production build in dist/
 
 ## How I customized Tailwind
 
-I extended the theme in `src/style.css` using `@theme`. I added a `brand` colour palette (shades 50 to 950, a green inspired by money and growth) and two custom fonts: Poppins for headings (`font-display`) and Inter for body text (`font-sans`). This gives me utilities like `bg-brand-700` and `font-display` across the whole project.
+I extended the theme in `src/style.css` using `@theme`. I added a `brand` colour palette (shades 5 to 950, a green inspired by money and growth) and two custom fonts: Poppins for headings (`font-display`) and Inter for body text (`font-sans`). This gives me utilities like `bg-brand-700` and `font-display` across the whole project.
 
 I also created reusable component classes inside `@layer components` with `@apply`: `.card` (white rounded panel with shadow), `.btn-primary` and `.btn-secondary` (buttons with hover, focus ring and transition), `.badge-paid`, `.badge-pending` and `.badge-failed` (coloured status pills), `.nav-link` (sidebar links), and `.field` / `.field-label` (form inputs and labels). This keeps the HTML short because the long utility lists live in one place. Dark mode uses a custom `dark` variant toggled by a class on the `<html>` element and saved in localStorage.
 
