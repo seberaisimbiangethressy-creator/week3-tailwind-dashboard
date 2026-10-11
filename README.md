@@ -24,7 +24,7 @@ I extended the theme in `src/style.css` using `@theme`. I added a `brand` colour
 
 I also created reusable component classes inside `@layer components` with `@apply`: `.card` (white rounded panel with shadow), `.btn-primary` and `.btn-secondary` (buttons with hover, focus ring and transition), `.badge-paid`, `.badge-pending` and `.badge-failed` (coloured status pills), `.nav-link` (sidebar links), and `.field` / `.field-label` (form inputs and labels). This keeps the HTML short because the long utility lists live in one place. Dark mode uses a custom `dark` variant toggled by a class on the `<html>` element and saved in localStorage.
 
-# Responsive behaviour
+## Responsive behaviour
 
 - Sidebar: hidden on mobile (opens with the menu button), always visible from `lg:`.
 - Stat cards: 1 column, 2 at `md:`, 4 at `xl:`.
